@@ -54,10 +54,14 @@ TODO
 
 # DEMO
 
-
 ## let's find an example
 
+...and look at Paint Timing: First Paint
+
+
 [Before](https://csabapalfi.github.io/whats-render-blocking/example/original/)
+
+
 
 
 [After](https://csabapalfi.github.io/whats-render-blocking/example/original/)
