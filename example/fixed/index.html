@@ -3,6 +3,7 @@
 <html class=" hasJS"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script>
 		new PerformanceObserver((entryList) => {
+			console.log(entryList);
 			const firstPaint = entryList.getEntriesByType('paint')[0];
 			console.log((firstPaint.startTime / 1000).toFixed(2));
 		}).observe({ entryTypes: ['paint'] });

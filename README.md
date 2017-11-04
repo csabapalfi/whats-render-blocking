@@ -1,86 +1,169 @@
 # What's render-blocking?
 
-...and how to avoid it
+...and how we avoid it
 
+[@csabapalfi](https://twitter.com/csabapalfi)
 
-> ## Do you have this problem?
+<!-- landing pages: fast + targeted -->
 
+---
+# 🎓
+# How did we learn about all this?
 
-## assumptions:
-
-## server-side rendering
-## let's focus on CSS
-
-
-![](img/back-in-time.gif)
-
-
-## PageSpeed Insights
-
+---
 ![](img/pagespeed.png)
+# PageSpeed Insights
 
+<!-- back in the day, score 0-100, suggestions -->
 
+---
 ![](img/minify.png)
 
-cache headers + no redirects, etc
+\+ compression, caching...
 
+<!-- add a plugin, set a flag, done -->
 
-## Then we saw this...
+---
+# Then we saw this...
 
 ![](img/pagespeed-problem.png)
 
+---
+# in Lighthouse, too
 
-## These days: Lighthouse
-
+<!-- TODO: better image -->
 ![](img/lighthouse-problem.png)
 
+---
+# 🤔 let's take a step back
+---
 
-# What's blocking what?
+# 🌐 browsers
+<h3 class="fragment fade-up">1. *get HTML* → DOM</h3>
+<h3 class="fragment fade-up">2. `<link>` to CSS → *get CSS* → CSSOM</h3>
+<h3 class="fragment fade-up">3. DOM + CSSOM → render tree</h3>
+<h3 class="fragment fade-up">4. render tree → layout/reflow</h3>
+<h3 class="fragment fade-up">5. layout/reflow → paint</h3>
 
-TODO
+<!-- render tree: computed styles -->
+<!-- layout/reflow: box-model, exact position/size in viewport -->
+<!-- ignoring JS/fonts etc in this talk -->
 
+---
+# ⚠️ critical path
 
-# Why fix this?
+### these steps 1-5
+### goal: getting to paint ASAP
 
+---
 
-<img style="width: 80vw;" src="img/mobile-throw.gif">
+# 🚫 render blocking CSS
 
+### `<link>` to CSS → <span class="fragment highlight-red">*get CSS*</span> → CSSOM
 
-# How?
+<h1 class="fragment fade-up">😱</h1>
 
-* inline critical CSS - critical: above the fold
-* async load non-critical CSS
+---
+# how to measure this?
 
+---
+# 🎨 `first-paint`
 
-# DEMO
+### [Paint Timing API](https://w3c.github.io/paint-timing/) - experimental
+### [Start Render](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics) - on webpagetest.org
 
-## let's find an example
+---
 
-...and look at Paint Timing: First Paint
+# 🔍 let's find a page
 
+--- 
 
-[Before](https://csabapalfi.github.io/whats-render-blocking/example/original/)
+![](img/meetup-landing.png)
 
+---
 
+# 📊 baseline (TODO)
 
+### `first-paint` avg (min-max): 
+### <span class="fragment fade-up">🖥️ </span> 0.38 (0.31-0.64)
+<h3 class="fragment fade-up">📱 2.77 (2.75-2.83)</h3>
+<h3 class="fragment fade-up">🐌 10</h3>
 
-[After](https://csabapalfi.github.io/whats-render-blocking/example/original/)
+---
 
+# ✅ Inline critical CSS
 
-## Gotchas
+embed styles for rendering above-the fold content
 
-* it's not just about rendering - are things interactive?
-* preload has to be polyfilled - only Chrome/Edge/(FF58)
-* what about below the fold? users scrolling?
-* where is the fold? 
-* don't use @import statements in critical CSS as that'll also trigger additional HTTP requests.
-* inlining too much CSS
+```html
+<style>
+    /* yes, here */
+</style>
+```
 
+---
 
-> ## Should've been a blog post?
+# 🤦 Wait a second
+
+```html
+<link rel="stylesheet" href="..." >
+```
+
+---
+
+# ⬇️ Async loading CSS
+
+below the fold can wait
+
+```html
+<link 
+  rel="preload" href="..." as="style" 
+  onload="this.rel='stylesheet'"
+>
+```
+
+---
+# 📊 fixed (TODO)
+
+### `first-paint` change% - avg (min-max): 
+### 0.38 (0.31-0.64)
+### 📱 2.77 (2.75-2.83)</h3>
+<h3 class="fragment fade-up">🐌 10</h3>
+
+---
+# 💢 Gotchas
+
+---
+# 🏆 Is this the first thing?
+
+### it's not just about paint/rendering
+### server side rendering assumed
+
+---
+# 👇 below the fold
+
+### where is the fold?
+### what if the user scrolls early?
+
+---
+# ⚒️ inlining critical CSS
+
+### how to extract
+### @import
+### relative `url(...)`s
+### keeping it small
+
+---
+# 🚚 async loading CSS
+
+### `rel=preload` browser support  Chrome/Safari/(FF58?)
+### `<noscript>`
+
+---
+> # Should've been a blog post?
 
 ## [It is!](https://csabapalfi.github.io/eliminate-render-blocking/)
 
+---
 
 # Thanks! Questions?
-
