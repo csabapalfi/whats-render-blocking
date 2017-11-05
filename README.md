@@ -185,7 +185,7 @@ Note:
 # 💢 Gotchas
 
 ---
-# 1⃣️ Is this the first thing?
+# 🏆 Is this the first thing?
 
 ### it's not just about paint/rendering
 ### server side rendering assumed
