@@ -177,6 +177,8 @@ Note:
 
 <!-- .slide: data-background-video="video/slow-3g.mp4" data-background-size="contain" -->
 
+Note:
+
 > Slow 3G Comparison Video: https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
 
 ---
