@@ -90,7 +90,12 @@
 <h3 class="fragment fade-up">🐌 10</h3>
 
 ---
+<!-- .slide: data-background="img/mobile-throw.gif" -->
 
+---
+# 🔧 how to fix this?
+
+---
 # ✅ Inline critical CSS
 
 embed styles for rendering above-the fold content
@@ -138,6 +143,7 @@ below the fold can wait
 
 ### it's not just about paint/rendering
 ### server side rendering assumed
+### testing
 
 ---
 # 👇 below the fold
