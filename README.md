@@ -32,7 +32,7 @@
 # in Lighthouse, too
 
 <!-- TODO: better image -->
-![](img/lighthouse-problem.png)
+![](img/lighthouse-problem-1.png)
 
 ---
 # 🤔 let's take a step back
@@ -166,10 +166,13 @@ below the fold can wait
 ### `<noscript>`
 
 ---
-> # Should've been a blog post?
+# Should've been a blog post?
 
-## [It is!](https://csabapalfi.github.io/eliminate-render-blocking/)
+### [It is!](https://csabapalfi.github.io/eliminate-render-blocking/)
 
+### Also: [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) by Google
+
+### Obligatory mention of [hpbn.co](http://hpbn.co)
 ---
 
 # Thanks! Questions?
