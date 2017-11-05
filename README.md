@@ -131,7 +131,13 @@ below the fold can wait
 ```
 ---
 
-# Results
+# 🥁 Results
+
+Note:
+
+https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
+
+https://www.webpagetest.org/video/compare.php?tests=171104_MT_fb281ceeb63da8ff610aafc56a7a4f6e,171104_45_8eca18bc58287f738c1bc3273c95120d
 
 ---
 
@@ -154,7 +160,7 @@ below the fold can wait
 # 💢 Gotchas
 
 ---
-# 🏆 Is this the first thing?
+# 1⃣️ Is this the first thing?
 
 ### it's not just about paint/rendering
 ### server side rendering assumed
