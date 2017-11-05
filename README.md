@@ -90,6 +90,8 @@ Note:
 
   https://csabapalfi.github.io/whats-render-blocking/example/original/
 
+  Not picking on anyone, it's an old landing page it seems for non-logged in users
+
 ---
 # 📊 baseline
 ### `first-paint`
