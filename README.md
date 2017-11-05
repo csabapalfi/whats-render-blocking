@@ -171,7 +171,8 @@ Note:
 ---
 # 🏆 are we done?
 
-### it's not just paint, [#LNM 14/11](https://www.meetup.com/LNM-London-Node-JS-Meetup/events/244280416/)
+### is this even your bottleneck?
+### it's not just about paint, [#LNM 14/11](https://www.meetup.com/LNM-London-Node-JS-Meetup/events/244280416/)
 
 ---
 # 👇 below the fold
