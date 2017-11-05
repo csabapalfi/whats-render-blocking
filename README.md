@@ -62,7 +62,7 @@ Note:
 ---
 # 🤷 is it happening?
 
-### `first-paint` from [Paint Timing API](https://w3c.github.io/paint-timing/) - experimental
+### `first-paint` ([Paint Timing API](https://w3c.github.io/paint-timing/))
 ### [Start Render](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics) - on webpagetest.org
 
 ---
