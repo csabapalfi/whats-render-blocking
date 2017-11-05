@@ -50,7 +50,7 @@ Note:
 
 ---
 
-# 🚫 render blocking CSS
+# 🚫 render-blocking CSS
 
 ### `<link>` to CSS → <span class="fragment highlight-red">*get CSS*</span> → CSSOM
 
