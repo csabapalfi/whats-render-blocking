@@ -5,7 +5,8 @@
 [@csabapalfi](https://twitter.com/csabapalfi)
 
 Note:
-  landing pages: fast + targeted
+  
+> landing pages: fast + targeted
 
 ---
 # 🎓
@@ -13,11 +14,11 @@ Note:
 
 ---
 ![](img/pagespeed.png)
+
 # PageSpeed Insights
 
-
 Note:
-  back in the day, score 0-100, suggestions
+>  back in the day, score 0-100, suggestions
 
 ---
 ![](img/minify.png)
@@ -25,7 +26,8 @@ Note:
 \+ compression, caching...
 
 Note:
-  mostly easy, add a plugin, set a flag, done
+  
+>  mostly easy, add a plugin, set a flag, done
 
 ---
 # Then we saw this...
@@ -43,16 +45,19 @@ Note:
 
 # 🌐 browsers
 <h3 class="fragment fade-up">1. *get HTML* → DOM</h3>
-<h3 class="fragment fade-up">2. `<link>` to CSS → *get CSS* → CSSOM</h3>
+<h3 class="fragment fade-up">2. link to CSS → *get CSS* → CSSOM</h3>
 <h3 class="fragment fade-up">3. DOM + CSSOM → render tree</h3>
 <h3 class="fragment fade-up">4. render tree → layout/reflow</h3>
 <h3 class="fragment fade-up">5. layout/reflow → paint</h3>
 
 
 Note:
-  render tree: computed styles
-  layout/reflow: box-model, exact position/size in viewport
-  ignoring JS/fonts etc in this talk
+
+>   render tree: computed styles
+
+>   layout/reflow: box-model, exact position/size in viewport
+
+>  ignoring JS/fonts etc in this talk
 
 ---
 # ⚠️ critical path
@@ -86,11 +91,12 @@ Note:
 ![](img/meetup-landing.png)
 
 Note:
-  cleaned up a bit: no JS
+  
+> cleaned up a bit: no JS
 
-  https://csabapalfi.github.io/whats-render-blocking/example/original/
+>   https://csabapalfi.github.io/whats-render-blocking/example/original/
 
-  Not picking on anyone, it's an old landing page it seems for non-logged in users
+>  Not picking on anyone, just an example it's an old landing page it seems for non-logged in users
 
 ---
 # 📊 baseline
@@ -142,13 +148,13 @@ below the fold can wait
 
 Note:
 
-https://csabapalfi.github.io/whats-render-blocking/example/fixed
+> https://csabapalfi.github.io/whats-render-blocking/example/fixed
 
-Had to extract an icon font, too
+> Had to extract an icon font, too
 
-https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
+> https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
 
-https://www.webpagetest.org/video/compare.php?tests=171104_MT_fb281ceeb63da8ff610aafc56a7a4f6e,171104_45_8eca18bc58287f738c1bc3273c95120d
+> https://www.webpagetest.org/video/compare.php?tests=171104_MT_fb281ceeb63da8ff610aafc56a7a4f6e,171104_45_8eca18bc58287f738c1bc3273c95120d
 
 ---
 
