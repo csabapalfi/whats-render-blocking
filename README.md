@@ -105,6 +105,10 @@ Note:
 <h3 class="fragment fade-up">📱 ~3s</h3>
 <h3 class="fragment fade-up">🐌 ~10s</h3>
 
+Note:
+
+> https://www.webpagetest.org/video/compare.php?tests=171105_4T_95d9effc4201862941b63137b87197c9
+
 ---
 <!-- .slide: data-background="img/mobile-throw.gif" -->
 
@@ -152,10 +156,6 @@ Note:
 
 > Had to extract an icon font, too
 
-> https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
-
-> https://www.webpagetest.org/video/compare.php?tests=171104_MT_fb281ceeb63da8ff610aafc56a7a4f6e,171104_45_8eca18bc58287f738c1bc3273c95120d
-
 ---
 
 # 📉 baseline vs fixed
@@ -169,9 +169,15 @@ Note:
 
 <!-- .slide: data-background-video="video/3g.mp4" data-background-size="contain" -->
 
+Note:
+
+> 3G Comparison Video: https://www.webpagetest.org/video/compare.php?tests=171104_MT_fb281ceeb63da8ff610aafc56a7a4f6e,171104_45_8eca18bc58287f738c1bc3273c95120d
+
 ---
 
 <!-- .slide: data-background-video="video/slow-3g.mp4" data-background-size="contain" -->
+
+> Slow 3G Comparison Video: https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
 
 ---
 # 💢 Gotchas
