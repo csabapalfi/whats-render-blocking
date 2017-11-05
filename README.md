@@ -62,7 +62,7 @@ Note:
 ---
 # ⚠️ critical path
 
-### these steps 1-5
+### resources → pixels on the screen
 ### goal: getting to paint ASAP
 
 ---
