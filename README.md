@@ -85,6 +85,11 @@ Note:
 
 ![](img/meetup-landing.png)
 
+Note:
+  cleaned up a bit: no JS
+
+  https://csabapalfi.github.io/whats-render-blocking/example/original/
+
 ---
 # 📊 baseline
 ### `first-paint`
@@ -134,6 +139,10 @@ below the fold can wait
 # 🥁 Results
 
 Note:
+
+https://csabapalfi.github.io/whats-render-blocking/example/fixed
+
+Had to extract an icon font, too
 
 https://www.webpagetest.org/video/compare.php?tests=171103_TW_a2ef99f5d74d5420325086146a91c6c6,171103_WH_22ad6263a3ef4a0c94add8cb470c4cc0
 
