@@ -4,7 +4,8 @@
 
 [@csabapalfi](https://twitter.com/csabapalfi)
 
-<!-- landing pages: fast + targeted -->
+Note:
+  landing pages: fast + targeted
 
 ---
 # 🎓
@@ -14,14 +15,17 @@
 ![](img/pagespeed.png)
 # PageSpeed Insights
 
-<!-- back in the day, score 0-100, suggestions -->
+
+Note:
+  back in the day, score 0-100, suggestions
 
 ---
 ![](img/minify.png)
 
 \+ compression, caching...
 
-<!-- add a plugin, set a flag, done -->
+Note:
+  mostly easy, add a plugin, set a flag, done
 
 ---
 # Then we saw this...
@@ -31,7 +35,6 @@
 ---
 # in Lighthouse, too
 
-<!-- TODO: better image -->
 ![](img/lighthouse-problem-1.png)
 
 ---
@@ -45,9 +48,11 @@
 <h3 class="fragment fade-up">4. render tree → layout/reflow</h3>
 <h3 class="fragment fade-up">5. layout/reflow → paint</h3>
 
-<!-- render tree: computed styles -->
-<!-- layout/reflow: box-model, exact position/size in viewport -->
-<!-- ignoring JS/fonts etc in this talk -->
+
+Note:
+  render tree: computed styles
+  layout/reflow: box-model, exact position/size in viewport
+  ignoring JS/fonts etc in this talk
 
 ---
 # ⚠️ critical path
