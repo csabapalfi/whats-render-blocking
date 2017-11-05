@@ -1,8 +1,6 @@
-# What's render-blocking?
+# What's <span style="white-space: nowrap">render-blocking</span>?
 
-...and how we avoid it
-
-[@csabapalfi](https://twitter.com/csabapalfi)
+Csaba Palfi ([@csabapalfi](https://twitter.com/csabapalfi))
 
 Note:
   
