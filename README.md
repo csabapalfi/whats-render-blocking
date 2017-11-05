@@ -122,7 +122,7 @@ embed styles for rendering above-the fold content
 
 # ⬇️ Async loading CSS
 
-other CSS for below the fold
+for below the fold
 
 ```html
 <link 
