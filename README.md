@@ -12,27 +12,12 @@ Note:
 
 ---
 ![](img/pagespeed.png)
-
 # PageSpeed Insights
 
-Note:
->  back in the day, score 0-100, suggestions
+![](img/pagespeed-problem-1.png)
 
 ---
-![](img/minify.png)
-
-\+ compression, caching...
-
-Note:
-  
->  mostly easy, add a plugin, set a flag, done
-
----
-# Then we saw this...
-
-![](img/pagespeed-problem.png)
-
----
+![](img/lighthouse.png)
 # in Lighthouse, too
 
 ![](img/lighthouse-problem-1.png)
@@ -41,7 +26,7 @@ Note:
 # 🤔 let's take a step back
 ---
 
-# 🌐 browsers
+# browsers: 🌐 🔜 🎨 
 <h3 class="fragment fade-up">1. *get HTML* → DOM</h3>
 <h3 class="fragment fade-up">2. link to CSS → *get CSS* → CSSOM</h3>
 <h3 class="fragment fade-up">3. DOM + CSSOM → render tree</h3>
@@ -83,6 +68,7 @@ Note:
 ---
 
 # 🔍 let's find a page
+### that has the problem
 
 --- 
 
@@ -99,7 +85,7 @@ Note:
 ---
 # 📊 baseline
 ### `first-paint`
-### <span class="fragment fade-up">🖥️ </span> ~0.5s
+### <span class="fragment fade-up">💻 </span> ~0.5s
 <h3 class="fragment fade-up">📱 ~3s</h3>
 <h3 class="fragment fade-up">🐌 ~10s</h3>
 
@@ -136,7 +122,7 @@ embed styles for rendering above-the fold content
 
 # ⬇️ Async loading CSS
 
-below the fold can wait
+other CSS for below the fold
 
 ```html
 <link 
@@ -159,7 +145,7 @@ Note:
 # 📉 baseline vs fixed
 
 ### `first-paint`
-### 🖥️ <0.5s → <0.5s
+### 💻 <0.5s → <0.5s
 <h3 class="fragment fade-up">📱 ~3s → ~1s</h3>
 <h3 class="fragment fade-up">🐌 ~10s -> ~2s</h3>
 
@@ -183,11 +169,11 @@ Note:
 # 💢 Gotchas
 
 ---
-# 🏆 Is this the first thing?
+# 🏆 are we done?
 
-### it's not just about paint/rendering
-### server side rendering assumed
-### testing
+### it's not just paint
+### SSR assumed
+### testing with critical CSS only
 
 ---
 # 👇 below the fold
@@ -196,15 +182,14 @@ Note:
 ### what if the user scrolls early?
 
 ---
-# ⚒️ inlining critical CSS
+# ⚒️ critical CSS
 
 ### how to extract (but e.g. styletron)
-### @import
-### relative `url(...)`s
 ### keeping it small
+### `@import`, relative `url(...)`s
 
 ---
-# 🚚 async loading CSS
+# 🚚 async loaded CSS
 
 ### `rel=preload` browser support  Chrome/Safari/(FF58?)
 ### `<noscript>`
@@ -212,9 +197,9 @@ Note:
 ---
 # Should've been a blog post?
 
-### [It is!](https://csabapalfi.github.io/eliminate-render-blocking/) - bit out of date though
+### [I have a blog post, too!](https://csabapalfi.github.io/eliminate-render-blocking/) - bit out of date
 
-### Also [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) by Google
+### also [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) by Google
 
 ---
 
