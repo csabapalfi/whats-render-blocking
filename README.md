@@ -81,13 +81,11 @@
 ![](img/meetup-landing.png)
 
 ---
-
-# 📊 baseline (TODO)
-
-### `first-paint` avg (min-max): 
-### <span class="fragment fade-up">🖥️ </span> 0.38 (0.31-0.64)
-<h3 class="fragment fade-up">📱 2.77 (2.75-2.83)</h3>
-<h3 class="fragment fade-up">🐌 10</h3>
+# 📊 baseline
+### `first-paint`
+### <span class="fragment fade-up">🖥️ </span> ~0.5s
+<h3 class="fragment fade-up">📱 ~3s</h3>
+<h3 class="fragment fade-up">🐌 ~10s</h3>
 
 ---
 <!-- .slide: data-background="img/mobile-throw.gif" -->
@@ -126,14 +124,22 @@ below the fold can wait
   onload="this.rel='stylesheet'"
 >
 ```
+---
+
+# 📉 baseline vs fixed
+
+### `first-paint`
+### 🖥️ <0.5s → <0.5s
+<h3 class="fragment fade-up">📱 ~3s → ~1s</h3>
+<h3 class="fragment fade-up">🐌 ~10s -> ~2s</h3>
 
 ---
-# 📊 fixed (TODO)
 
-### `first-paint` change% - avg (min-max): 
-### 0.38 (0.31-0.64)
-### 📱 2.77 (2.75-2.83)</h3>
-<h3 class="fragment fade-up">🐌 10</h3>
+<!-- .slide: data-background-video="video/3g.mp4" data-background-size="contain" -->
+
+---
+
+<!-- .slide: data-background-video="video/slow-3g.mp4" data-background-size="contain" -->
 
 ---
 # 💢 Gotchas
@@ -154,7 +160,7 @@ below the fold can wait
 ---
 # ⚒️ inlining critical CSS
 
-### how to extract
+### how to extract (but e.g. styletron)
 ### @import
 ### relative `url(...)`s
 ### keeping it small
@@ -168,11 +174,12 @@ below the fold can wait
 ---
 # Should've been a blog post?
 
-### [It is!](https://csabapalfi.github.io/eliminate-render-blocking/)
+### [It is!](https://csabapalfi.github.io/eliminate-render-blocking/) - bit out of date though
 
-### Also: [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) by Google
+### Also [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) by Google
 
-### Obligatory mention of [hpbn.co](http://hpbn.co)
 ---
 
 # Thanks! Questions?
+
+[@csabapalfi](https://twitter.com/csabapalfi)
