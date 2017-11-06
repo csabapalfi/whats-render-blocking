@@ -61,7 +61,7 @@ Note:
 <h1 class="fragment fade-up">😱</h1>
 
 ---
-# how to measure this?
+# what to measure?
 
 ---
 # 🤷 is it happening?
