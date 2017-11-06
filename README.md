@@ -2,17 +2,17 @@
 
 Csaba Palfi ([@csabapalfi](https://twitter.com/csabapalfi))
 
-Note:
-  
-> landing pages: fast + targeted
-
 ---
 
 ![](img/render-blocking.png)
 
+Note:
+
+> A problem of a network request preventing the browser from rendering the page (progressively).
+
 ---
 # 🎓
-# How did we learn about all this?
+# How did we learn about this?
 
 ---
 ![](img/pagespeed.png)
@@ -44,7 +44,7 @@ Note:
 
 >   layout/reflow: box-model, exact position/size in viewport
 
->  ignoring JS/fonts etc in this talk
+>   ignoring JS/fonts etc in this talk
 
 ---
 # ⚠️ critical path
@@ -70,7 +70,6 @@ Note:
 ### [Start Render](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics) - on webpagetest.org
 
 ---
-
 # 🔍 let's find a page
 ### that has the problem
 
@@ -176,7 +175,7 @@ Note:
 # 🏆 are we done?
 
 ### is this even your bottleneck?
-### how many slow 3G users?
+### how many slow 3G users? - tricky
 ### it's sooo not just about first-paint
 ### [#LNM 14/11](https://www.meetup.com/LNM-London-Node-JS-Meetup/events/244280416/)
 
