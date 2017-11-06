@@ -7,6 +7,10 @@ Note:
 > landing pages: fast + targeted
 
 ---
+
+![](img/render-blocking.png)
+
+---
 # 🎓
 # How did we learn about all this?
 
