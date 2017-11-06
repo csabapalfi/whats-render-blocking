@@ -191,7 +191,7 @@ Note:
 ---
 # 🚚 async loaded CSS
 
-### `rel=preload` browser support  Chrome/Safari/(FF58?)
+### `rel=preload` browser support  Chrome/Safari(not 📱)/FF
 ### `<noscript>`
 
 ---
