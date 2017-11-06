@@ -172,7 +172,9 @@ Note:
 # 🏆 are we done?
 
 ### is this even your bottleneck?
-### it's not just about paint, [#LNM 14/11](https://www.meetup.com/LNM-London-Node-JS-Meetup/events/244280416/)
+### how many slow 3G users?
+### it's sooo not just about first-paint
+### [#LNM 14/11](https://www.meetup.com/LNM-London-Node-JS-Meetup/events/244280416/)
 
 ---
 # 👇 below the fold
@@ -191,7 +193,7 @@ Note:
 ---
 # 🚚 async loaded CSS
 
-### `rel=preload` browser support  Chrome/Safari(not 📱)/FF
+### `rel=preload` browser support
 ### `<noscript>`
 
 ---
